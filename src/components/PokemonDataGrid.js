@@ -1,3 +1,5 @@
+//компонент, который создает карточки через цикл
+
 import React from "react";
 import PokemonCard from "./PokemonCard";
 
