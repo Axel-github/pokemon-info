@@ -1,7 +1,9 @@
 import React from "react";
-import PokemonCard from "./components/PokemonCard";
+import PokemonCard from "./components/cards/PokemonCard";
 import PokemonDataGrid from "./components/PokemonDataGrid";
 import { Pokemon } from "./models/Pokemon";
+import Layout from "./components/layout/Layout";
+
 function App() {
   const bulba = new Pokemon("Bulbasaur", "A strange seed was planted on its back at birth.");
   const pikachu = new Pokemon("Pikachu", "Электрическая мышь")
@@ -15,17 +17,18 @@ function App() {
 
 
   return (
-    <div>
+    <Layout>
+
       <PokemonDataGrid pokemons={pokemons} />
 
-    </div>
+    </Layout>
   );
 };
 
-// todo layout компонент, в который встраиваются др компоненты 
-// API папка, файл с запросом для импорта 
-// Axios для запросов 
-// компоненты по папкам
+// todo layout компонент, в который встраиваются др компоненты +
+// API папка, файл с запросом для импорта +
+// Axios для запросов +
+// компоненты по папкам +
 // Header 
 // src папка -> images; icons 
 // модалка: через порталы  

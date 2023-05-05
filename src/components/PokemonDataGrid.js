@@ -1,7 +1,7 @@
 //компонент, который создает карточки через цикл
 
 import React from "react";
-import PokemonCard from "./PokemonCard";
+import PokemonCard from "./cards/PokemonCard";
 
 function PokemonDataGrid(props) {
   // const { pokemons } = props;
@@ -13,5 +13,7 @@ function PokemonDataGrid(props) {
     </div>
   );
 }
+
+
 
 export default PokemonDataGrid;
