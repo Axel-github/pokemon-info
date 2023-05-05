@@ -1,13 +1,12 @@
-//компонент, который создает карточки через цикл
-
-import React from "react";
+import React, { useState } from "react";
 import PokemonCard from "./PokemonCard";
 
 function PokemonDataGrid(props) {
-  // const { pokemons } = props;
+  const [pokemons, setPokemons] = useState(props.pokemons);
+
   return (
     <div>
-      {props.pokemons.map((pokemon) => (
+      {pokemons.map((pokemon) => (
         <PokemonCard pokemon={pokemon} />
       ))}
     </div>
